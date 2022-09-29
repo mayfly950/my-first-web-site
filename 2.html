@@ -12,14 +12,67 @@
 </script>
 <title>One day Korean class</title>
 <meta charset="utf-8">
+<style>
+  a {
+    color:black;
+    text-decoration:none;
+  }
+  h1 {
+    font-size: 45px;
+    text-align: center;
+    border-bottom:1px solid gray;
+    margin:0;
+    padding:20px;
+  }
+  #grid ol{
+    padding-left: 32px;
+  }
+  ol{
+    border-right:1px solid gray;
+    width:180px;
+    margin:0;
+    padding:20px;
+  }
+  body{
+    margin:0;
+  }
+  #grid{
+    display: grid;
+    grid-template-columns: 240px 1fr;
+  }
+  #grid #article{
+    padding-left: 25px;
+  }
+  @media(max-width:750px){
+    #grid{
+      display: block;
+    }
+      ol{
+        border-right:none
+      }
+      h1 {
+    border-bottom:none
+    }
+  }
+</style>
 </head>
 <body>
   <h1><a href="index.html">One day Korean class</a></h1>
+<div id="grid">
   <ol>
     <li><a href="1.html">The most common conversation</a></li>
     <li><a href="2.html">Let's talk to your idol!</a></li>
     <li><a href="3.html">Weekly conversation vote</a></li>
   </ol>
+  <!--
+  <h1><a href="index.html"><font color="red">One day Korean class</font></a></h1>
+  <ol>
+    <li><a href="1.html"><font color="red">The most common conversation</font></a></li>
+    <li><a href="2.html"><font color="red">Let's talk to your idol!</font></a></li>
+    <li><a href="3.html"><font color="red">Weekly conversation vote</font></a></li>
+  </ol>
+-->
+  <div id="article">
   <h2>Let's talk to your idol!</h2>
 <p>There’s no exact things on how to make your idol/bias talking to you especially for korean idols. But here are my recommendations. Good luck!</p>
 <P>1. Be their staff</p>
@@ -36,7 +89,8 @@ Change your name in hangul. If you have non-korean name, translate it hangul so 
 <P>5. If all fails, burst into tears!</p>
 <P>Since it’s frustrating on how hard it is to communicate with your idols, why don’t you shed a few tears? If not, eyedrops are always handy. A little drama might catch your idol attention. If you’re lucky enough they can calm you down and thanks you for supporting them.</p>
 <P>If the list seems possible to make you closer with idol, then I wish you a good luck. If you're lucky, you might even get a word of comfort from your idol!</p>
-
 <p>^.^</p>
+  </div>
+</div>
 </body>
 </html>
